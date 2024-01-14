@@ -1,0 +1,125 @@
+body{
+    background-color: #252839;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: bisque;
+    margin-bottom: 5rem;
+    font-family: 'Sassy Frass', cursive;
+    font-size: 7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    position: relative;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 9vw;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
+
+}
+
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    -webkit-text-stroke: 0.3vw #01fe87;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate
+{
+    0%, 10%, 100%
+    {
+        width: 0%;
+    }
+    70%, 90%
+    {
+        width: 100%;
+    }
+}
+
+h3{
+    color: white;
+
+}
+
+.shadowBtn{
+    width: 115px;
+    height: 45px;
+    margin-bottom: 5rem;
+    border: 2px solid #01fe87;
+    border-radius: 11px;
+    background-color: transparent;
+    color: #01fe87;
+    cursor: pointer;
+    position: relative;
+}
+
+.shadowBtn:hover{
+    background-color: #01fe87;
+    color: black;
+    transition: 1s ease;
+}
+
+.before::before{
+    pointer-events: none;
+    content:" ";
+    position: absolute;
+    left: 0;
+    top: 50px;
+    background: #01fe87;
+    height: 80%;
+    width: 100%;
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.33);
+    filter: blur(12px);
+    transition: 1s ease;
+}
+
+.card-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+    background-color: #212529;
+}
+
+.card{
+    width: 371.99px;
+    height: 262.4px;
+    background-color: #212529;
+}
+
+.first{
+    
+}
+
+.line{
+    color: white;
+    height: 2px;
+}
+
+footer{
+    text-align:center;
+    color: whitesmoke;
+    bottom: 0;
+}
