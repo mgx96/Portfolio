@@ -1,5 +1,5 @@
 body{
-    background-color: #252839;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +27,7 @@ h2{
     position: relative;
     margin-bottom: 3rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 9vw;
+    font-size: 6vw;
     color: #252839;
     -webkit-text-stroke: 0.3vw #383d52;
     text-transform: uppercase;
@@ -60,7 +60,20 @@ h2::before{
 
 h3{
     color: white;
+    font-family: 'Noto Sans', sans-serif;
+    margin-right: 65%;
+}
 
+h4{
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    padding-top: 10px;
+}
+
+p{
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    padding: 10px;
 }
 
 .shadowBtn{
@@ -98,24 +111,39 @@ h3{
 .card-container{
     display: flex;
     width: 100%;
+    flex-grow: 1;
     justify-content: space-between;
     background-color: white;
-    background-color: #212529;
+    background-color: black;
 }
 
 .card{
-    width: 371.99px;
-    height: 262.4px;
+    width: 100%;
+    height: 250px;
     background-color: #212529;
+    border: #212529;
 }
 
 .first{
-    
+    align-items: center;
+    background-color: black;
 }
+
+.second{
+    align-items: center;
+    background-color: black;
+}
+
+.third{
+    align-items: center;
+    background-color: black;
+}
+
 
 .line{
     color: white;
     height: 2px;
+    width: 100%;
 }
 
 footer{
