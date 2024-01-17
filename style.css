@@ -5,14 +5,40 @@
 
 .navButtons{
     display: flex;
-    gap: 150px;
+    gap: 100px;
     justify-content: right;
-    background-color: #01e5fe;
+    background-color: black;
+    height: 30px;
 }
 
-a{
-    color: black;
+.navButtons a{
+    color: white;
     text-decoration: none;
+    margin-right: 20px;
+}
+
+.navButtons a:hover{
+    color:#c6c6c6;
+}
+
+.navMenu span{
+    display: inline-block;
+    width: 28px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: black;
+}
+
+.navMenu span:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+.navMenu, .navMenu span{
+    transition:all .4s ease-in-out
+}
+
+.title{
+    color: black;
 }
 
 body{
@@ -38,6 +64,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
 }
 
 h2{
@@ -159,7 +186,6 @@ p{
 
 .line{
     color: white;
-    height: 2px;
     width: 100%;
 }
 
