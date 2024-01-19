@@ -5,7 +5,7 @@
 
 .navButtons{
     display: flex;
-    gap: 100px;
+    gap: 150px;
     justify-content: right;
     background-color: black;
     height: 30px;
@@ -18,13 +18,19 @@
 }
 
 .navButtons a:hover{
-    color:#c6c6c6;
+    color:orangered;
+}
+
+.github{
+    height: 25px;
+    margin-top: 2px;
 }
 
 .navMenu{
     padding: 5px;
     margin-right: auto;
 }
+
 
 .navMenu > span{
     display: block;
@@ -39,7 +45,7 @@
 }
 
 .navMenu, .navMenu > span{
-    transition:all .4s ease-in-out;
+    transition:all 0.4s ease-in-out;
 }
 
 .navMenu.active{
