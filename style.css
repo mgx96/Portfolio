@@ -5,32 +5,53 @@
 
 .navButtons{
     display: flex;
-    gap: 150px;
-    justify-content: right;
     background-color: black;
     height: 30px;
 }
 
-.navButtons a{
+
+ .button{
+    display: inline-flex;
     color: white;
     text-decoration: none;
     margin-right: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1.75;
 }
 
 .navButtons a:hover{
     color:orangered;
 }
 
+.icons{
+    flex: 1;
+    pointer-events: none;
+}
+
 .github{
     height: 25px;
     margin-top: 2px;
+    border: white solid;
+    border-radius: 180px;
+    background-color: white;
+    margin-left: 100px;
+    pointer-events: all;
+}
+
+.github:hover{
+    background-color: aqua;
+    border-color: aqua;
 }
 
 .navMenu{
     padding: 5px;
     margin-right: auto;
+    cursor: pointer;
 }
-
 
 .navMenu > span{
     display: block;
@@ -38,6 +59,7 @@
     height: 1.6px;
     border-radius: 9999px;
     background-color: white;
+    pointer-events: all;
 }
 
 .navMenu > span:not(:last-child) {
