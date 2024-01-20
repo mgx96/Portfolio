@@ -45,6 +45,22 @@
 .github:hover{
     background-color: aqua;
     border-color: aqua;
+    transition: 1s ease;
+}
+
+.linkedin{
+    height: 25px;
+    margin-top: 2px;
+    border: white dashed;
+    background-color: white;
+    pointer-events: all;
+    margin-left: 10px;
+}
+
+.linkedin:hover{
+    background-color: aqua;
+    border-color: aqua;
+    transition: 1s ease;
 }
 
 .navMenu{
