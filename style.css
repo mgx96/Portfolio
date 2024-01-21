@@ -1,3 +1,8 @@
+
+body{
+    min-width: 375px;
+}
+
 .top{
     background-color: white;
     width: 100%;
@@ -5,6 +10,7 @@
 
 .navBar{
     display: flex;
+    flex-wrap: wrap;
     background-color: black;
     height: 30px;
 }
@@ -38,7 +44,7 @@
     border: white solid;
     border-radius: 180px;
     background-color: white;
-    margin-left: 30px;
+    margin-left: 200px;
     pointer-events: all;
 }
 
@@ -67,7 +73,7 @@
 
 .navMenu{
     padding: 5px;
-    margin-right: auto;
+    justify-content: flex-start;
     cursor: pointer;
 }
 
@@ -145,6 +151,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .variant{
@@ -156,7 +163,7 @@ h1{
 
 .variant span{
     position: relative;
-    animation: 10s ease infinite;
+    animation: animation 15s ease infinite;
 }
 
 @keyframes animation{
@@ -198,13 +205,14 @@ h2{
     justify-content: center;
     margin-bottom: 3rem;
     font-family: 'Sassy Frass', cursive;
-    font-size: 6rem;
+    font-size: 5rem;
     color: black;
 }
 
 
 h3{
     color: white;
+    margin-left: 10px;
     font-family: 'Noto Sans', sans-serif;
     margin-right: auto;
 }
@@ -255,9 +263,8 @@ p{
 
 .card-container{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    flex: 1;
-    background-color: black;
 }
 
 .card{
@@ -286,9 +293,22 @@ p{
     width: 100%;
 }
 
+.projects{
+    color: black;
+    background-color: white;
+}
+
+.experience-container{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+
 footer{
     text-align:center;
     color: whitesmoke;
     bottom: 0;
-    margin-top: 80px;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
