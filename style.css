@@ -1,6 +1,7 @@
 
 body{
     min-width: 375px;
+    margin: 0;
 }
 
 .top{
@@ -13,6 +14,8 @@ body{
     flex-wrap: wrap;
     background-color: black;
     height: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -36,6 +39,7 @@ body{
 .icons{
     flex: 1;
     pointer-events: none;
+    overflow: none;
 }
 
 .github{
@@ -44,7 +48,7 @@ body{
     border: white solid;
     border-radius: 180px;
     background-color: white;
-    margin-left: 200px;
+    margin-left: 40%;
     pointer-events: all;
 }
 
@@ -72,7 +76,7 @@ body{
 }
 
 .navMenu{
-    padding: 5px;
+    padding: 6px;
     justify-content: flex-start;
     cursor: pointer;
 }
@@ -80,7 +84,7 @@ body{
 .navMenu > span{
     display: block;
     width: 28px;
-    height: 1.6px;
+    height: 1.5px;
     border-radius: 9999px;
     background-color: white;
     pointer-events: all;
@@ -312,6 +316,7 @@ p{
 .footer-container{
     background-color: black;
     width: 100%;
+    margin-top: 1rem;
 }
 
 .black-line{
@@ -326,4 +331,9 @@ footer{
     bottom: 0;
     margin-top: 20px;
     margin-bottom: 5px;
+}
+
+.of-the-sky{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
 }
